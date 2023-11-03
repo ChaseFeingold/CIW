@@ -84,13 +84,19 @@ header {
   background-color: #FD8A3E;
 }
 
-#img-rotate {
-  transform: rotate(-345deg);
-}
 head ~ body {
   background-color: rgb(236, 237, 228);
 }
-
+#img-rotate {
+    -ms-transform: rotate(345deg); /* Microsoft Edge */
+    -webkit-transform: rotate(345deg); /* Chrome and Safari */
+    transform: rotate(345deg);
+}
+#video-rotate {
+    -ms-transform: rotate(15deg); /* Microsoft Edge */
+    -webkit-transform: rotate(15deg); /* Chrome and Safari */
+    transform: rotate(15deg);
+}
     </style>
   </head>
   <body>
@@ -112,14 +118,14 @@ head ~ body {
     <h1>Dog's, Cat's, and Bonus Animals </h1>
     <p>The dog below is very athletic, whenever he wins a trophy he gets a treat. The cat has a really nice smile</p>
     <aside>
-    <img src="https://t4.ftcdn.net/jpg/05/65/46/67/360_F_565466706_prtLC3eI86E2aCVlJXuJFlZKD4ZZWpor.jpg" width="300" height="250" alt="string">
+    <img class class="floatright" id="image-rotate" src="https://t4.ftcdn.net/jpg/05/65/46/67/360_F_565466706_prtLC3eI86E2aCVlJXuJFlZKD4ZZWpor.jpg" width="300" height="250" alt="string">
     <img src="https://www.eastdallasvetclinic.com/sites/default/files/interesting-cat-facts.jpg" width="300" height="250" alt="string">
     </aside>
    <div>
     <article>
     <h2>Santa's Little partner</h2>
     <p>This is where Santa's reindeers are in the summer.</p>
-    <video width="340" height="240" controls>
+    <video class="floatright" id="video-rotate" width="340" height="240" controls>
         <source src="Reindeer.mp4" type="video/mp4">
         <source src="Reindeer.mp4" type="video/mp4">
         Your browser does not support the HTML5 video element.
