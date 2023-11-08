@@ -103,6 +103,18 @@ head ~ body {
     -webkit-transform: rotateY(180deg); /* Safari and Chrome */
     transform: rotateY(180deg);
 }
+h2 ~ p {
+        font-style: italic;
+    }
+    p {
+        width: 150px;
+        height: 100px;
+        background: #add8e6;
+        transition: width 3s, transform 3s;
+    }
+    p:hover {
+        width: 250px;
+    }
     </style>
   </head>
   <body>
@@ -116,7 +128,7 @@ head ~ body {
     <li><a href="Funnymoment.html"> Funny Animal Moments </a></li>
   </ol>
 <header>
-    <img id="logo-rotate" src="Logo for project.png" width="400" height="400" alt="uCorp logo" />
+    <img id="logo-rotate" src="Logo for project.png" width="200" height="200" alt="uCorp logo" />
 </header>
 
 <h1>Dog's, Cat's, and Bonus Animals </h1>
